@@ -61,13 +61,13 @@ validator.validate(json, schema, function (err, valid) {
 ##Browser:
 
 ```html
-<script type="text/javascript" src="../dist/ZSchema-browser-min.js"></script>
+<script type="text/javascript" src="node_modules/z-schema/dist/ZSchema-browser-min.js"></script>
 <script type="text/javascript">
-    var ZSchema = require("ZSchema");
 	var validator = new ZSchema();
 	var valid = validator.validate("string", { "type": "string" });
 	console.log(valid);
 </script>
+
 ```
 
 ##Remote references and schemas:
